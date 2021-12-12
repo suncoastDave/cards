@@ -1,0 +1,21 @@
+/************Custom Start*****************/
+/* Dart Sass resource: https://sass-lang.com/documentation/cli/dart-sass */
+
+// imports
+@import "variables";
+@import "grid";
+@import "mixins";
+@import "animations";
+@import "globals";
+@import "components/header";
+@import "homepage_hero";
+@import "homepage_cards";
+@import "components/footer";
+@import "search_results";
+@import "blog";
+@import "single";
+@import "archive";
+@import "drug";
+@import "card";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Play:wght@400;700&display=swap');

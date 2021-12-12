@@ -1,0 +1,230 @@
+/************Homepage Cards Start*****************/
+$minColWidth: 1rem;
+$gridGap: 1rem;
+
+.pt-4 {
+  padding-top: 1.6rem;
+}
+.p-3 {
+  padding: 1rem;
+}
+.flex {
+  margin: 0 auto;
+  max-width: 1400px;display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.grid {
+    margin: 0 1rem 0 1rem;
+    max-width: 1400px;
+    display: grid;
+    gap: $gridGap;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    max-width: 500px;
+    grid-template-columns: 100%;
+    place-items: center;
+}
+  }
+.cards__container{
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.cards__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95%;
+    color: $rich-black;
+}
+@media screen and (max-width: 600px) {
+  .cards__header {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+}
+.view-all {
+    padding: .4rem;
+    background-color: $emerald;
+    border: darkgreen 1px solid;
+    border-radius: 25% 15%;
+    color: white;
+}
+.view-all > i {
+    margin-right: .5rem;
+}
+.card__container {
+  width: 100%;
+}
+.cards__header > a:hover{
+    font-size: 1.4rem;
+    color: $body-text;
+}
+.card {
+  max-width: 450px;
+  border: 1px #ccc solid;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: $cards;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10196078431372549) !important;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 600px) {
+.card {
+  margin-bottom: 2rem;
+}
+}
+.card__img > a {
+  text-decoration: none;
+  color: blue;
+  background-color: transparent;
+}
+.card__img {
+  position: relative;
+}
+.card__head {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: lightblue;
+}
+h4.drug-name {
+  color: black;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 3.6vmin);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.card__img .fas {
+  color: green;
+  font-size: 2rem;
+}
+.img-fluid {
+  height: 150px;
+  width: 250px;
+  background-color: lawngreen;
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: border-box;
+}
+.button-card {
+  bottom: -16px;
+  left: 1rem;
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+}
+.button-card > a {
+  background: #2260f8;
+  border-radius: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border: 3px solid white;
+  padding: 7px 13px;
+}
+.card__body > h6 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  margin: 0 3rem;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 14px;
+}
+
+.home__cards .button-card a:hover {
+    background: lightgray;
+    color: black;
+}
+.home__cards .button-card a:visited {
+    background: $mediumgray;
+    color: black;
+}
+/*Pharmacy Cards*/
+
+.pharmacy-brand {
+    position: relative;
+}
+.pharmacy-brand > .card__head {
+    text-decoration: none;
+    background-color: rgb(252, 231, 234);
+  }
+.fa-prescription-bottle {
+    font-size: 1.6rem;
+    color: red;
+}
+.home__pharmacies .button-card a:hover {
+    background: lightgray;
+    color: black;
+}
+.home__pharmacies .button-card a:visited {
+    background: $mediumgray;
+    color: black;
+}
+/*Categories Section*/
+.home__categories h2 {
+    text-align: center;
+    color: $rich-black;
+}
+.categories-grid {
+    max-width: 2000px;
+    display: grid;
+    place-items: center;
+}
+@media (min-width: 600px) {
+  .categories-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+  }
+@media (min-width: 960px){
+  .categories-grid {
+    display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 350px));
+  justify-content: center;
+  align-content: center;
+  }
+}
+body .home .category {
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+.category-head {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category-icon {
+    margin-bottom: .2rem;
+    margin-right: 1rem;
+}
+.category-icon > i {
+    color: $emerald;
+    font-size: 1.2rem;
+}
+.category-links {
+  display: flex;
+  justify-content: center;
+  margin: 0 20%;
+}
+.category-title {
+    font-size: 1.4rem;
+    color: $body-text;
+}
+

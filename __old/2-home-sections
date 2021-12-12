@@ -1,0 +1,165 @@
+<section class="home__pharmacies content-wrapper">
+  <div class="cards__container">
+    <div class="cards__header">
+      <h2 class="">Search by Pharmacy</h2>
+      <a href="#" class="view-all"><i class="fas fa-eye fa-sm text-white-50"></i> View More</a> </div>
+    <div class="grid">
+      <article class="card__container">
+        <div class="card">
+          <div class="pharmacy-brand">
+            <div class="card__head"> <i class="fas fa-prescription-bottle"></i>
+              <h4 class="drug-name">CVS</h4>
+            </div>
+            <div class="button-card"> <a href="#"><span>Details</span></a> </div>
+          </div>
+          <div class="pt-4 p-3">
+            <div class="card__body mb-3">
+              <h5>Prices as low as $9.11</h5>
+              <p class="text-grey"> <i class="fas fa-user-friends"></i> 1,000,000 Downloads </p>
+            </div>
+            <div class="card__footer"> <span class="text-danger">Savings up to 90% off</span> <a href="#" class="btn btn-sm btn-white ml-auto">Get Offer</a> </div>
+          </div>
+        </div>
+      </article>
+      <article class="card__container">
+        <div class="card">
+          <div class="pharmacy-brand">
+            <div class="card__head"> <i class="fas fa-prescription-bottle"></i>
+              <h4 class="drug-name">Publix</h4>
+            </div>
+            <div class="button-card"> <a href="#"><span>Details</span></a> </div>
+          </div>
+          <div class="pt-4 p-3">
+            <div class="card__body mb-3">
+              <h5>Prices as low as $9.11</h5>
+              <p class="text-grey"> <i class="fas fa-user-friends"></i> 1,000,000 Downloads </p>
+            </div>
+            <div class="card__footer"> <span class="text-danger">Savings up to 90% off</span> <a href="#" class="btn btn-sm btn-white ml-auto">Get Offer</a> </div>
+          </div>
+        </div>
+      </article>
+      <article class="card__container">
+        <div class="card">
+          <div class="pharmacy-brand">
+            <div class="card__head"> <i class="fas fa-prescription-bottle"></i>
+              <h4 class="drug-name">Walmart</h4>
+            </div>
+            <div class="button-card"> <a href="#"><span>Details</span></a> </div>
+          </div>
+          <div class="pt-4 p-3">
+            <div class="card__body mb-3">
+              <h5>Prices as low as $9.11</h5>
+              <p class="text-grey"> <i class="fas fa-user-friends"></i> 1,000,000 Downloads </p>
+            </div>
+            <div class="card__footer"> <span class="text-danger">Savings up to 90% off</span> <a href="#" class="btn btn-sm btn-white ml-auto">Get Offer</a> </div>
+          </div>
+        </div>
+      </article>
+      <article class="card__container">
+        <div class="card">
+          <div class="pharmacy-brand">
+            <div class="card__head"> <i class="fas fa-prescription-bottle"></i>
+              <h4 class="drug-name">Walgreens</h4>
+            </div>
+            <div class="button-card"> <a href="#"><span>Details</span></a> </div>
+          </div>
+          <div class="pt-4 p-3">
+            <div class="card__body mb-3">
+              <h5>Prices as low as $9.11</h5>
+              <p class="text-grey"> <i class="fas fa-user-friends"></i> 1,000,000 Downloads </p>
+            </div>
+            <div class="card__footer"> <span class="text-danger">Savings up to 90% off</span> <a href="#" class="btn btn-sm btn-white ml-auto">Get Offer</a> </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="home__categories">
+  <h2>Compare Drugs by Category</h2>
+  <div class="categories-grid">
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-head">
+        <div class="category-icon"> <i class="fas fa-user-alt"></i> </div>
+        <div class="category-title"> Weight Loss </div>
+      </div>
+      <div class="category-links">
+        <p><a class="category-drug" href="/coupon=PHENTERMINE">Phentermine</a>, <a class="category-drug" href="/coupon=Qsymia">Qsymia</a>, <a class="category-drug" href="/coupon=Phendimetrazine">Phendimetrazine</a>, <a class="category-drug" href="/coupon=Adipex">Adipex</a>, <a class="category-drug" href="/coupon=Diethylpropion">Diethylpropion</a></p>
+      </div>
+    </div>
+
+
+  </div>
+</section>

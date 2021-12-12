@@ -1,0 +1,65 @@
+/* Card Styles */
+#card {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+}
+#card h1 {
+    color: $usafa-blue;
+    font-size: $font-lg;
+}
+#card p:nth-child(2) {
+    font-size: 1.4rem;
+    color:$darkgray;
+    font-weight:500;
+}
+p .how-to {
+    text-decoration: underline;
+}
+.theCard {
+    border:dashed thick $brand-orange;
+    padding: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.theCard h2{
+margin: 0 2rem;
+}
+.theTable {
+    margin: 0 auto;
+}
+.theTable td {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    color: $rich-black;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant-numeric: slashed-zero;
+    font-weight: 600;
+    caption-side: bottom;
+}
+.cardbtn {
+    background: $emerald;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: solid 2px $brand-orange;
+}
+.cardbtn:hover {
+    font-size: 1.8rem;
+}
+.cardbtn:visited {
+    background: $champagne;
+    color: $darkgray;
+}
+
+.instructions {
+    color: $darkgray;
+}
+.instructions h3 {
+    font-size: 2rem;
+    color: $rich-black;
+    font-weight: 500;
+}

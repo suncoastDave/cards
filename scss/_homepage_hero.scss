@@ -1,0 +1,132 @@
+/************Homepage Hero Start*****************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+.home {
+	font-size: 16px;
+
+&__search-copy h1 {
+	font-family: 'Play', sans-serif;
+	font-size: clamp(1rem, 10vw, 2.6rem);
+	color: $rich-black;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+&__search-copy h1 > span {
+	font-weight: 700;
+	color: $brand-orange;
+}
+&__search-copy h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(1.2rem, 4vw, 1.8rem);
+	font-weight: 400;
+	margin: 1rem 0 2rem;
+}
+&__search-box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+&__search {
+	width: 100%;
+}
+&__search-copy {
+	text-align: center;
+}
+}
+
+.search {
+	max-width: 1200px;
+	background: white;
+	width: 100vh;
+	padding: 3rem;
+	box-shadow: 0 0 3em rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 900px) {
+	.search {
+		width: 80%;
+	}
+  }
+
+.search-bar {
+	--size: 60px;
+	border: 2px solid $blue-accent;
+	display: flex;
+	border-radius: 50px;
+	height: var(--size);
+	width: var(--size);
+	padding: 3px;
+	transition: width 300ms cubic-bezier(0.18,0.89,0.32, 1.12);
+	overflow: hidden;
+
+	&__input {
+		flex-grow: 1;
+		font-size: 1.5rem;
+		padding: 0 0.5rem;
+		border: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		line-height: calc(var(--size) - 3px);
+		opacity: 0;
+		cursor: pointer;
+
+		&:focus{
+			outline: 0;
+		}
+	}
+
+	&__submit {
+		font-size: 1.5rem;
+		cursor: pointer;
+		border: 0;
+		background: transparent;
+		border-radius: 50%;
+		width: calc(var(--size) - 10px);
+		height: calc(var(--size) - 10px);
+		margin-left: auto;
+		transition: background 150ms ease-in-out;
+	}
+
+	&:focus-within {
+		width: 100%;
+
+		.search-bar__input{
+			position: relative;
+			opacity: 1;
+			cursor: initial;
+			width: calc(100% - var(--size));
+		}
+		.search-bar__submit {
+			background: orangered;
+			color: white;
+
+			&:focus,
+			&:hover {
+				outline: 0;
+				box-shadow: 0 0 10px rgba(0,0,0, .45);
+			}
+		}
+	}
+}
+/************ Search Results *****************/
+
+#match-list {
+	background: $brand-orange;
+	z-index: 51;
+}
+.searchList {
+	padding: 1rem;
+	font-size: 1.4rem;
+	color: $blue_accent;
+	border-bottom: aqua 2px solid;
+	border-radius: 4px;
+	position: relative;
+}
