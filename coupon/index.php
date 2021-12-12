@@ -14,25 +14,25 @@ get_header();
 $zip = (!isset($_POST['zip'])) ? '90210' : $_POST['zip'];
 
     //https://zipapi.us/
-//    $url = 'https://service.zipapi.us/zipcode/ echo $zip ?X-API-KEY=e04e1085b14f5ac391fdf4e7691e539a';
-//
-//    $curl = curl_init();
-//
-//    // OPTIONS:
-//    curl_setopt($curl, CURLOPT_URL, $url);
-//    curl_setopt($curl, CURLOPT_USERPWD, 'LISTS@JARVIS725.COM' . ":" . 'gru*ZGP0xdc9epa!zwy');
-//    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-//    curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-//    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-//
-//
-//    // EXECUTE:
-//    $result = curl_exec($curl);
-//    if(!$result){
-//        die("Connection Failure");
-//    }
-//    curl_close($curl);
-//    echo 'The result is: ' . $result;
+    $url = 'https://service.zipapi.us/zipcode/ echo $zip ?X-API-KEY=e04e1085b14f5ac391fdf4e7691e539a';
+
+    $curl = curl_init();
+
+    // OPTIONS:
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_USERPWD, 'LISTS@JARVIS725.COM' . ":" . 'gru*ZGP0xdc9epa!zwy');
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+
+    // EXECUTE:
+    $result = curl_exec($curl);
+    if(!$result){
+        die("Connection Failure");
+    }
+    curl_close($curl);
+    echo 'The result is: ' . $result;
 
 
 

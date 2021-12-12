@@ -14,7 +14,7 @@
 <?php //.search-form--container via https://codepen.io/kevinpowell/pen/jONomrd andhttps://www.youtube
     //.com/watch?v=DonxmmWW7Tk&t=104s ?>
 
-      <form action="/coupon/"
+      <form action=""
             method="get"
             class="search">
         <div class="form-container">
