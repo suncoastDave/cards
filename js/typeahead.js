@@ -35,7 +35,7 @@ const outputHtml = matches => {
     if(matches.length > 0) {
         const html = matches.map(
             match => `
-        <a class="arrow-toggleable"  href='/coupon/index.php?drug=${match.hyphenname}&ndc=${match.ndc}'>
+        <a class="arrow-toggleable"  href='coupon/index.php?drug=${match.hyphenname}&ndc=${match.ndc}&quantity=${match.quantity}'>
         <div class="searchList">
         <span class="h5">${match.first}</span>  
         </div>

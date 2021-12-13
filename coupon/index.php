@@ -9,30 +9,69 @@ get_header();
 <main class="drug">
 
 <?php
+$radius = htmlspecialchars($_REQUEST['radius'] ?? '15');
+$zipCode = htmlspecialchars($_REQUEST['zipCode'] ?? '34208');
+$ndc = htmlspecialchars($_REQUEST['ndc'] ?? '65628007005');
+$quantity = htmlspecialchars($_REQUEST['quantity'] ?? '30');
+//NOTE! If NDC=manaul, reroute to cutom quote page
+
+echo "The radius is " . $radius . "and zip code is " . ". meanwhile, the ndc is " . $ndc . " and the quantity is " .
+     $quantity;
+//
+//
+//
+//	$curl = curl_init();
+//
+//	curl_setopt_array($curl, array(
+//		CURLOPT_URL => "https://argusprod.dstsystems.com/pharmacy-drug-pricing/1.0/service/PharmacyPricing/?radius=$radius&zipCode=$zipCode&quantity=$quantity&ndc=$ndc",
+//		CURLOPT_RETURNTRANSFER => true,
+//		CURLOPT_ENCODING => '',
+//		CURLOPT_MAXREDIRS => 10,
+//		CURLOPT_TIMEOUT => 0,
+//		CURLOPT_FOLLOWLOCATION => true,
+//		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//		CURLOPT_CUSTOMREQUEST => 'GET',
+//		CURLOPT_HTTPHEADER => array(
+//			'Authorization: Basic V1NBWElBUlg6OFBaNzU1ZUVrZVVnQ3ByUHg1V3p1TUFDcGlJPQ==',
+//		),
+//	));
+//
+//	$response = curl_exec($curl);
+//
+//	curl_close($curl);
+//	echo $response;
+//	die()
+
+
+
+
+
 //grab zip code value if there is one or default to 90210
 //$zip = htmlspecialchars($_POST['zip']);
-$zip = (!isset($_POST['zip'])) ? '90210' : $_POST['zip'];
 
-    //https://zipapi.us/
-    $url = 'https://service.zipapi.us/zipcode/ echo $zip ?X-API-KEY=e04e1085b14f5ac391fdf4e7691e539a';
+//$zip = (!isset($_POST['zip'])) ? '90210' : $_POST['zip'];
+//
+//    //https://zipapi.us/
+//    $url = 'https://service.zipapi.us/zipcode/ echo $zip ?X-API-KEY=e04e1085b14f5ac391fdf4e7691e539a';
+//
+//    $curl = curl_init();
+//
+//    // OPTIONS:
+//    curl_setopt($curl, CURLOPT_URL, $url);
+//    curl_setopt($curl, CURLOPT_USERPWD, 'LISTS@JARVIS725.COM' . ":" . 'gru*ZGP0xdc9epa!zwy');
+//    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+//    curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+//    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+//
+//
+//    // EXECUTE:
+//    $result = curl_exec($curl);
+//    if(!$result){
+//        die("Connection Failure");
+//    }
+//    curl_close($curl);
+//    echo 'The result is: ' . $result;
 
-    $curl = curl_init();
-
-    // OPTIONS:
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_USERPWD, 'LISTS@JARVIS725.COM' . ":" . 'gru*ZGP0xdc9epa!zwy');
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-
-
-    // EXECUTE:
-    $result = curl_exec($curl);
-    if(!$result){
-        die("Connection Failure");
-    }
-    curl_close($curl);
-    echo 'The result is: ' . $result;
 
 
 
@@ -43,7 +82,8 @@ $zip = (!isset($_POST['zip'])) ? '90210' : $_POST['zip'];
         <div class="drug__block">
             <h1 class="drug__name">Phentermine 37.5<span> Mg Tablet</span></h1>
         </div>
-
+<?php echo "The radius is " . $radius . "and zip code is " . ". meanwhile, the ndc is " . $ndc . " and the quantity is " .
+     $quantity; ?>
         <form class="drugForm" action="/" target="_self" method="post">
             <div class="drugForm-div--quantity">
                 <label for="quantity">Quantity:</label>
