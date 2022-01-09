@@ -1,5 +1,7 @@
 PRE LAUNCH ACTION ITEMS
 1. If NDC=manaul, reroute to cutom quote page
+   1. this is the error ON THE PAGE you'll get without an NDC: 
+      1. {"errorMsg":"NDC is required."}
 2. Speed up home page search
 3. Fix URLs
 4. 
