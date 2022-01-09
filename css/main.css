@@ -1440,6 +1440,12 @@ blockquote:before, blockquote:after {
   justify-content: center;
 }
 
+div.drugForm-div--quantity > input {
+  font-size: 1.4rem;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
 /* Card Styles */
 #card {
   margin: 0 auto;

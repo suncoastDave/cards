@@ -13,7 +13,7 @@ const searchDrugs = async searchText => {
     let matches = drugs.filter(searchRes => {
         const regex = new RegExp(`^${searchText}`, 'gi');
 
-            return searchRes.first.match(regex);
+            return searchRes.name.match(regex);
     });
 
     if (searchText.length === 0){
@@ -22,7 +22,7 @@ const searchDrugs = async searchText => {
         matchList.innerHTML = '';
     }
 
-    console.log(matches);
+   // console.log(matches);
 
 //output the html
     if (searchText.length > 2) {
@@ -35,9 +35,9 @@ const outputHtml = matches => {
     if(matches.length > 0) {
         const html = matches.map(
             match => `
-        <a class="arrow-toggleable"  href='coupon/index.php?drug=${match.hyphenname}&ndc=${match.ndc}&quantity=${match.quantity}'>
+        <a class="arrow-toggleable"  href='coupon/index.php?drug=${match.hyphen}&ndc=${match.ndc}&quantity=${match.quantity}'>
         <div class="searchList">
-        <span class="h5">${match.first}</span>  
+        <span class="h5">${match.name}</span>  
         </div>
         </a>
 `).join('');

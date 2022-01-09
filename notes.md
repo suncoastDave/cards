@@ -1,10 +1,16 @@
+PRE LAUNCH ACTION ITEMS
+1. If NDC=manaul, reroute to cutom quote page
+2. Speed up home page search
+3. Fix URLs
+4. 
+
+
 --> API/Drug Lookup
 -will need a fallback for NDC lookups that fail. I should use the NDCs from the last 12 months and update regularly. But if there is one not on there I need to prompt them to fill out a form and contact me for a free custom quote.
 -also need to catch api returns that have a $0.00 return. I've seen that sometimes this only happens with a few of the pharmacies. Probably need to loop through return and if there is no good data, either fallback to the old pricing lookup or have them reach out to me via a form, as above.
 -The api call needs the following: NDC, Quantity(route type), Zip Code, Radius.
     -Given that, I'll need
         -NDC (most popular) to Drug name table
-        -All drug's quanities with count, ml, etc. You should be able to vlookup all those using the good NDCs
 -Average price by NDC then use that one?
 
 Homepage/CARDS
